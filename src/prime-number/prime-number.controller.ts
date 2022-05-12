@@ -13,7 +13,7 @@ export class PrimeNumberController {
   // Result: -> {"result": 6, "isPrime": false}
   // Input: ?action=sumandcheck&numbers=1,2,3
 
-  //convert strings to numbers with pipes
+  //Validate query with pipes defined in dto
   @UsePipes(new ValidationPipe({ transform: true }))
   @Get('sumandcheck')
   async sumAndCheck(
