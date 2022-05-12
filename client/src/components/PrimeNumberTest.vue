@@ -71,7 +71,7 @@ export default class PrimeNumberTest extends Vue {
 
     async querySumAndChek(numbers: number[]) {
         try {
-            let result = await axios.get('http://localhost:3000/api/prime-number/sumandcheck', { params: { numbers: numbers } })
+            let result = await axios.get('/api/prime-number/sumandcheck', { params: { numbers: numbers } })
 
             if (result.status == 200) {
                 this.sumAndCheckResult = result.data
@@ -93,7 +93,7 @@ export default class PrimeNumberTest extends Vue {
 
     async queryPrimeCheck(number: number) {
         try {
-            let result = await axios.get('http://localhost:3000/api/prime-number/checkprime', { params: { number: number } })
+            let result = await axios.get('/api/prime-number/checkprime', { params: { number: number } })
             if (result.status == 200) {
                 this.checkPrimeResult = result.data
                 this.checkPrimeResult.number = this.checkPrimeNumber
