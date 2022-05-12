@@ -1,8 +1,8 @@
-import { Module } from '@nestjs/common';
-import { AppController } from './app.controller';
-import { AppService } from './app.service';
-import { PrimeNumberService } from './prime-number/prime-number.service';
-import { PrimeNumberController } from './prime-number/prime-number.controller';
+import { Module } from '@nestjs/common'
+import { AppController } from './app.controller'
+import { AppService } from './app.service'
+import { PrimeNumberService } from './prime-number/prime-number.service'
+import { PrimeNumberController } from './prime-number/prime-number.controller'
 
 @Module({
   imports: [],

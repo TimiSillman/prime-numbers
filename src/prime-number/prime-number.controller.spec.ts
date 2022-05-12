@@ -1,18 +1,18 @@
-import { Test, TestingModule } from '@nestjs/testing';
-import { PrimeNumberController } from './prime-number.controller';
+import { Test, TestingModule } from '@nestjs/testing'
+import { PrimeNumberController } from './prime-number.controller'
 
 describe('PrimeNumberController', () => {
-  let controller: PrimeNumberController;
+  let controller: PrimeNumberController
 
   beforeEach(async () => {
     const module: TestingModule = await Test.createTestingModule({
       controllers: [PrimeNumberController],
-    }).compile();
+    }).compile()
 
-    controller = module.get<PrimeNumberController>(PrimeNumberController);
-  });
+    controller = module.get<PrimeNumberController>(PrimeNumberController)
+  })
 
   it('should be defined', () => {
-    expect(controller).toBeDefined();
-  });
-});
+    expect(controller).toBeDefined()
+  })
+})
