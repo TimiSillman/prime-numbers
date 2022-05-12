@@ -1,10 +1,19 @@
-import { Type } from 'class-transformer'
+import { Transform, Type } from 'class-transformer'
 import { IsArray, IsInt, IsNumber } from 'class-validator'
 
 export class SumAndCheckQuery {
-  @IsInt({ each: true })
-  @Type(() => Number)
   @IsArray()
   @IsNumber({}, { each: true })
-  numbers: number[]
+  @IsInt({ each: true })
+  @Transform(({ value }) => {
+    if (typeof value == 'string') {
+      return value
+        .trim()
+        .split(',')
+        .map((i) => Number(i))
+    } else {
+      return value.map((i) => Number(i))
+    }
+  })
+  numbers?: number[]
 }
