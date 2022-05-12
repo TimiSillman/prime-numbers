@@ -3,10 +3,16 @@
 Using NodeJS, implement a backend REST API which:
 
 1. Takes multiple integers as input, calculates the sum, and returns the sum including information whether the sum is a prime number or not.
+ 
+- /api/prime-number/sumandcheck
 
 2. Takes one integer as input, and returns information whether the sum is a prime number or not.
 
+- /api/prime-number/checkprime
+
 3. How would you host this in Azure?
+
+- Currently hosted on azure https://prime-number.azurewebsites.net
 
 Using React / your favorite UI stack implement also a frontend UI page to test the API. User should be able to enter 1-n integers that are sent to API endpoint 1, and single integer that is sent to API endpoint 2.
 
