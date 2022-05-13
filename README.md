@@ -5,8 +5,8 @@
 - Takes single number paramater ex. `?number=12`
 
 ### Azure
-- Currently hosted on azure https://prime-number.azurewebsites.net using [https://azure.microsoft.com/en-us/services/app-service/](App Services)
-- Other possibility could be dockerize the app and use [https://azure.microsoft.com/en-us/services/kubernetes-service/](Kubernets Service)
+- Currently hosted on azure https://prime-number.azurewebsites.net using [App Services](https://azure.microsoft.com/en-us/services/app-service/)
+- Other possibility could be dockerize the app and use [Kubernets Service](https://azure.microsoft.com/en-us/services/kubernetes-service/)
 
 # Coding assignment
 
